@@ -141,7 +141,7 @@ def about_app_html() -> None:
           <li>
             <a href="https://stackoverflow.com/users/19290081/jamiu-shaibu" target="_blank">
               <img class="link-image" 
-                src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/stackoverflow-color-icon.svg" 
+                src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/stackoverflow-color-icon.svg" 
                 alt="stackoverflow icon">
             </a>
           </li>
