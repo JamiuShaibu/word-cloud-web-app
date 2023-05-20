@@ -7,12 +7,19 @@ from PIL.Image import Image
 from langdetect import LangDetectException
 from wordcloud import WordCloud
 
-from helper_functions import read_text_file, read_pdf_file, read_word_document
+from helper_functions import (
+    read_text_file,
+    read_pdf_file,
+    read_word_document
+)
 from project_modules.color_hub import get_image_colors
 
 from page_content.faq_content import faq_html_content
 from project_modules.stopwords_getter import set_stopwords_base_on_content_language
-from costume_css.site_styler import style_uploader_button, style_uploader_container
+from costume_css.site_styler import (
+    style_uploader_button,
+    style_uploader_container
+)
 
 
 @st.cache_resource(ttl=timedelta(hours=1), show_spinner=False)
@@ -95,7 +102,7 @@ def project_handler() -> None:
     """Holds the project functionality"""
     style_uploader_button()
     style_uploader_container()
-    uploaded_file = st.file_uploader("Upload a file", type=["pdf", "txt", "docx"])
+    uploaded_file = st.file_uploader("Upload a file:", type=["pdf", "txt", "docx"])
 
     col1, col2, col3 = st.columns(3)
     colors = get_image_colors()

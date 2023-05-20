@@ -1,7 +1,13 @@
 from page_content.footer import footer_html
 from page_content.about import about_app_html
-from costume_css.site_styler import style_sidebar, style_download_button, style_button, \
-    style_header, style_background, style_input_fields
+from costume_css.site_styler import (
+    style_sidebar,
+    style_download_button,
+    style_button,
+    style_header,
+    style_background,
+    style_input_fields
+)
 
 from helper_functions import render_front_page_image
 from word_cloud import project_handler

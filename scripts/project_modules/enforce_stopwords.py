@@ -17,24 +17,27 @@ def provide_more_stopwords(language: str) -> list[str]:
             'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C',
             'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
             'W', 'X', 'Y', 'Z', 'seems', 'come', 'Come', 'whenever', 'three', 'yet', 'way', 'TXT', 'txt',
-            'pc', 'either', 'ing', 'else', 'ever', 'therefore'
+            'pc', 'either', 'ing', 'else', 'ever', 'therefore', 'le', 'ly', 'es', 'er', 'oin', 'sa', 'ent',
+            'od'
         ],
         "spanish": [
             'solo', 'somos', 'tan', 'aun', 'mismo', 'misma', 'mas', 'si', 'sere', 'veras', 'aqui', 'ser',
             'veía', 'miró', 'dos', 'casi', 'aún', 'tal', 'pues', 'ambos', 'cada', 'ahí', 'allá', 'hacía',
-            'hacia', 'vio', 'ir', 'paso', 'Además', 'decidió', 'tomó', 'iba', 'pasó', 'así', 'después',
-            'aunque', 'debía', 'dejo', 'cosa', 'cómo', 'tipo', 'va', 'par', 'punto', 'voy', 'ver', 'rato',
-            'vez', 'dio', 'comenzó', 'sido', 'vas', 'aquella', 'debía', 'veces', 'abrió', 'contestó', 'dejó',
-            'podía', 'sintió', 'sabe', 'cosas', 'podría', 'pensaba', 'giró', 'pensó', 'preguntó', 'aquello',
-            'sabes', 'sabía', 'volvió', 'siguió', 'aquí', 'aquel', 'explicó', 'caminó', 'quedó', 'llevó',
-            'encontró', 'entonces', 'hecho', 'hace', 'hizo', 'B', 'hacer', 'Ah', 'debe', 've', 'unas', 'vamos',
-            'haber', 'allí', 'dicho', 'mientras', 'quién', 'echo', 'algún', 'dijo', 'dice', 'vi', 'digo', 'toda',
-            'todo', 'veo', 'puedo', 'dije', 'sola', 'solo', 'solas', 'solos', 'usted', 'sólo', 'dónde', 'echó',
-            'tres', 'cuatro', 'sinco', 'seis', 'siete', 'ocho', 'nueve', 'diez', 'in', 'n', 'c', 'ello', 'ta',
-            'tal', 'ba', 'h', 'a', 'b', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'p', 'q', 'r', 's', 't',
-            'u', 'v', 'w', 'x', 'y', 'z', 'as', 'au', 'be', 'ne', 're', 'ra', 'na', 'jo', 'tra', 'ca', 'usté',
-            'sa', 'co', 'ro', 'des', 'lado', 'pa', 'an', 'to', 'todas', 'todos', 'iban', 'vió', 'tras', 'dar',
-            'Jos', 'fué', 'ésta', 'nte'
+            'hacia', 'vio', 'ir', 'paso', 'Además', 'tomó', 'iba', 'pasó', 'así', 'después', 'aunque',
+            'debía', 'dejo', 'cosa', 'cómo', 'tipo', 'va', 'par', 'punto', 'voy', 'ver', 'rato', 'vez',
+            'dio', 'sido', 'vas', 'aquella', 'debía', 'veces', 'abrió', 'dejó', 'podía', 'sabe', 'cosas',
+            'podría', 'aquello', 'sabes', 'sabía', 'aquí', 'aquel', 'entonces', 'hecho', 'hace', 'hizo',
+            'B', 'hacer', 'Ah', 'debe', 've', 'unas', 'vamos', 'haber', 'allí', 'dicho', 'mientras', 'quién',
+            'echo', 'algún', 'dijo', 'dice', 'vi', 'digo', 'toda', 'todo', 'veo', 'puedo', 'dije', 'sola',
+            'solo', 'solas', 'solos', 'usted', 'sólo', 'dónde', 'echó', 'tres', 'cuatro', 'sinco', 'seis',
+            'ocho', 'nueve', 'in', 'n', 'c', 'ello', 'ta', 'tal', 'ba', 'h', 'a', 'b', 'd', 'e', 'f', 'g',
+            'h', 'i', 'j', 'k', 'l', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'as', 'etc',
+            'au', 'be', 'ne', 're', 'ra', 'na', 'jo', 'tra', 'ca', 'usté', 'sa', 'co', 'ro', 'des', 'lado',
+            'pa', 'an', 'to', 'todas', 'todos', 'iban', 'vió', 'tras', 'dar', 'Jos', 'fué', 'ésta', 'nte',
+            'éste' 'of', 'is', 'there', 'the', 'éstos', 'siete', 'so', 'Do', 'do'
+        ],
+        "german": [
+            'beim', 'P', 'jedoch', 'ging', 'darauf', 'c', 'deren', 'kam', 'm',
         ]
     }
     return stopwords.get(language, ['brrr'])
