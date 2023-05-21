@@ -18,7 +18,7 @@ def provide_more_stopwords(language: str) -> list[str]:
             'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
             'W', 'X', 'Y', 'Z', 'seems', 'come', 'Come', 'whenever', 'three', 'yet', 'way', 'TXT', 'txt',
             'pc', 'either', 'ing', 'else', 'ever', 'therefore', 'le', 'ly', 'es', 'er', 'oin', 'sa', 'ent',
-            'od'
+            'od', 'although'
         ],
         "spanish": [
             'solo', 'somos', 'tan', 'aun', 'mismo', 'misma', 'mas', 'si', 'sere', 'veras', 'aqui', 'ser',
@@ -34,7 +34,7 @@ def provide_more_stopwords(language: str) -> list[str]:
             'h', 'i', 'j', 'k', 'l', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'as', 'etc',
             'au', 'be', 'ne', 're', 'ra', 'na', 'jo', 'tra', 'ca', 'usté', 'sa', 'co', 'ro', 'des', 'lado',
             'pa', 'an', 'to', 'todas', 'todos', 'iban', 'vió', 'tras', 'dar', 'Jos', 'fué', 'ésta', 'nte',
-            'éste' 'of', 'is', 'there', 'the', 'éstos', 'siete', 'so', 'Do', 'do'
+            'éste', 'of', 'is', 'there', 'the', 'éstos', 'siete', 'so', 'Do', 'do', 'and'
         ],
         "german": [
             'beim', 'P', 'jedoch', 'ging', 'darauf', 'c', 'deren', 'kam', 'm',
