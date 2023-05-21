@@ -26,7 +26,7 @@ from costume_css.site_styler import (
 def process_uploaded_file(user_file: TextIO) -> Tuple[str, str]:
     """Takes uploaded file as parameter and returns a cleaned up string"""
     file_content = ""
-    file_extension = user_file.name.split(".")[1].lower()
+    file_extension = user_file.name.split(".")[-1].lower()
     page_number_html = ""
     if file_extension == "pdf":
         default_page_num = 1
