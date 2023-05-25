@@ -14,7 +14,7 @@ from word_cloud import project_handler
 import streamlit as st
 
 
-def sidebar_items() -> None:
+def render_sidebar_items() -> None:
     """Display sidebar items"""
     style_sidebar()
     about_app_html()
@@ -22,7 +22,7 @@ def sidebar_items() -> None:
 
 def load_page() -> None:
     st.set_page_config(layout="wide", page_icon="🪶", page_title="Wordcloud-Generator")
-    sidebar_items()
+    render_sidebar_items()
     style_background()
     style_header()
     style_input_fields()

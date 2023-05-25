@@ -13,7 +13,6 @@ from helper_functions import (
     read_word_document
 )
 from project_modules.color_hub import get_image_colors
-
 from page_content.faq_content import faq_html_content
 from project_modules.stopwords_getter import set_stopwords_base_on_content_language
 from costume_css.site_styler import (
