@@ -9,16 +9,15 @@ def provide_more_stopwords(language: str) -> list[str]:
     """
     stopwords = {
         "english": [
-            'doi', 'also', 'often', 'much', 'even', 'see', 'could', 'seem', 'others', 'us', 'https',
-            'www', 'said', 'end', 'next', 'likely', 'whether', 'another', 'going', 'go', 'without',
-            'would', 'doing', 'someone', 'one', 'thing', 'two', 'no', 'Whenever', 'every', 'something',
-            'somethings', 'things', 'used', 'com', 'However', 'rather', 'still', 'put', 'que', 'p', 'la',
-            'de', 'pp', 'Thus', 'ed', 'en', 'vol', 'th', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-            'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C',
-            'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
-            'W', 'X', 'Y', 'Z', 'seems', 'come', 'Come', 'whenever', 'three', 'yet', 'way', 'TXT', 'txt',
-            'pc', 'either', 'ing', 'else', 'ever', 'therefore', 'le', 'ly', 'es', 'er', 'oin', 'sa', 'ent',
-            'od', 'although'
+            'doi', 'also', 'often', 'see', 'could', 'seem', 'others', 'us', 'https', 'www', 'said', 'end',
+            'next', 'likely', 'whether', 'another', 'going', 'go', 'without', 'would', 'doing', 'someone',
+            'one', 'thing', 'two', 'no', 'Whenever', 'every', 'something', 'somethings', 'things', 'used',
+            'com', 'However', 'rather', 'still', 'put', 'que', 'p', 'la', 'de', 'pp', 'Thus', 'ed', 'en',
+            'vol', 'th', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
+            'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
+            'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'seems',
+            'come', 'Come', 'whenever', 'three', 'yet', 'way', 'TXT', 'txt', 'pc', 'either', 'ing', 'else',
+            'ever', 'therefore', 'le', 'ly', 'es', 'er', 'oin', 'sa', 'ent', 'od', 'although'
         ],
         "spanish": [
             'solo', 'somos', 'tan', 'aun', 'mismo', 'misma', 'mas', 'si', 'sere', 'veras', 'aqui', 'ser',
@@ -34,7 +33,7 @@ def provide_more_stopwords(language: str) -> list[str]:
             'h', 'i', 'j', 'k', 'l', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'as', 'etc',
             'au', 'be', 'ne', 're', 'ra', 'na', 'jo', 'tra', 'ca', 'usté', 'sa', 'co', 'ro', 'des', 'lado',
             'pa', 'an', 'to', 'todas', 'todos', 'iban', 'vió', 'tras', 'dar', 'Jos', 'fué', 'ésta', 'nte',
-            'éste', 'of', 'is', 'there', 'the', 'éstos', 'siete', 'so', 'Do', 'do', 'and'
+            'éste', 'of', 'is', 'there', 'the', 'éstos', 'siete', 'so', 'Do', 'do', 'and', 'this', 'those'
         ],
         "german": [
             'beim', 'P', 'jedoch', 'ging', 'darauf', 'c', 'deren', 'kam', 'm',
