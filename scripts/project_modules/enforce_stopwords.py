@@ -17,7 +17,8 @@ def provide_more_stopwords(language: str) -> list[str]:
             'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
             'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'seems',
             'come', 'Come', 'whenever', 'three', 'yet', 'way', 'TXT', 'txt', 'pc', 'either', 'ing', 'else',
-            'ever', 'therefore', 'le', 'ly', 'es', 'er', 'oin', 'sa', 'ent', 'od', 'although'
+            'ever', 'therefore', 'le', 'ly', 'es', 'er', 'oin', 'sa', 'ent', 'od', 'although', 'ye', 'thy',
+            'Fo', 'though', 'ng', 'hath', 'thee', 'unto', 'whatever', 'Thou',
         ],
         "spanish": [
             'solo', 'somos', 'tan', 'aun', 'mismo', 'misma', 'mas', 'si', 'sere', 'veras', 'aqui', 'ser',
