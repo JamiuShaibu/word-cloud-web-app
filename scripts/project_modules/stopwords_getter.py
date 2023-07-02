@@ -43,6 +43,8 @@ def map_language(abbr: str) -> str:
         'zh-tw': 'chinese',
         'iw': 'hebrew',
         'he': 'hebrew',
+        "hi": "hindi",
+        "ms": "malaysian",
     }
     return LANGUAGES.get(abbr, None)
 

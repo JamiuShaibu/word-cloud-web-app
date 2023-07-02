@@ -72,3 +72,11 @@ def read_word_document(user_file: TextIO) -> str:
     string_content = " ".join([paragraph.text for paragraph in doc.paragraphs])
     clean_content = clean_string_content(string_content)
     return clean_content
+
+
+@st.cache_resource(ttl=timedelta(hours=1), show_spinner=False)
+def take_raw_text(raw_text):
+    clean_content = ""
+    if raw_text:
+        clean_content = clean_string_content(raw_text)
+    return clean_content

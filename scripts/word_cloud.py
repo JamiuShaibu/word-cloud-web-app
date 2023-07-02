@@ -10,7 +10,7 @@ from wordcloud import WordCloud
 from helper_functions import (
     read_text_file,
     read_pdf_file,
-    read_word_document
+    read_word_document, take_raw_text
 )
 from project_modules.color_hub import get_image_colors
 from page_content.faq_content import faq_html_content
@@ -101,7 +101,16 @@ def project_handler() -> None:
     """Holds the project functionality"""
     style_uploader_button()
     style_uploader_container()
-    uploaded_file = st.file_uploader("Upload a file:", type=["pdf", "txt", "docx"])
+
+    input_type = st.radio("Input Options:", ["Upload File", "Enter Text"], label_visibility="hidden")
+
+    raw_text = None
+    uploaded_file = None
+
+    if input_type == "Enter Text":
+        raw_text = st.text_area("Text Input:", placeholder="Enter text here...")
+    else:
+        uploaded_file = st.file_uploader("Upload a file:", type=["pdf", "txt", "docx"])
 
     col1, col2, col3 = st.columns(3)
     colors = get_image_colors()
@@ -117,32 +126,33 @@ def project_handler() -> None:
 
     # Initialize a session state for button
     generateButton = st.button("Auto Generate Word Cloud")
-    if "generate_generateButton" not in st.session_state:
-        st.session_state["generate_generateButton"] = False
-    if generateButton or st.session_state["generate_generateButton"]:
-        st.session_state["generate_generateButton"] = True
+    if "generateButton" not in st.session_state:
+        st.session_state["generateButton"] = False
+    if generateButton or st.session_state["generateButton"]:
+        st.session_state["generateButton"] = True
 
     # When generateButton is clicked, clear the cache of this function in order to generate new image
     if generateButton:
         generate_and_render_image.clear()
 
-    clean_data = ""
     if uploaded_file:
         page_number, clean_data = process_uploaded_file(uploaded_file)
         render_page_number.markdown(page_number, unsafe_allow_html=True)
+    else:
+        clean_data = take_raw_text(raw_text)
 
     default_pixel = 0
-    if uploaded_file and (height_input and width_input != default_pixel):
+    if (uploaded_file or raw_text) and (height_input and width_input != default_pixel):
         try:  # Try to get content language else write error message to end-user
             image = generate_and_render_image(clean_data, image_color, width_input, height_input)
             render_download_button(image, width_input, height_input)
         except LangDetectException:
-            st.error("File content is not supported. Please try a different file.")
+            if uploaded_file:
+                st.error("File content is not supported. Please try a different file.")
 
-    elif uploaded_file is None and generateButton:
-        st.info("Please you are required to upload a file and fill in the input fields.")
-    elif uploaded_file and generateButton:
-        st.info("Please make sure you fill all the input fields.")
+    elif (not uploaded_file or not raw_text) and generateButton:
+        st.info("Please you are required to: \n1. Upload a file or enter text. \n2. Make sure you fill in all input "
+                "fields.")
 
     with st.expander("**Read FAQs:**"):
         st.markdown(faq_html_content, unsafe_allow_html=True)

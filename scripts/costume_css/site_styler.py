@@ -22,7 +22,11 @@ def style_background() -> None:
             
           footer.css-164nlkn.egzxvld1 {
             visibility: hidden;
-          }  
+          }
+          
+          div[role="radiogroup"][aria-label="Input Options:"]{
+            bottom: 65px !important;
+          }
         </style>""", unsafe_allow_html=True)
 
 
