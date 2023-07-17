@@ -117,9 +117,9 @@ def project_handler() -> None:
     with col1:
         image_color = st.selectbox("Pick Image Color:", colors)
     with col2:
-        width_input = st.number_input("Enter Image Width:", value=0, min_value=0, max_value=3840)
+        width_input = st.number_input("Enter Image Width(px):", value=0, min_value=0, max_value=3840)
     with col3:
-        height_input = st.number_input("Enter Image Height:", value=0, min_value=0, max_value=2160)
+        height_input = st.number_input("Enter Image Height(px):", value=0, min_value=0, max_value=2160)
 
     # Renders total number of pages in the file
     render_page_number = st.container()
