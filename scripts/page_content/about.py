@@ -134,14 +134,14 @@ def about_app_html() -> None:
           <li>
             <a href="https://github.com/JamiuShaibu" target="_blank">
               <img class="link-image" 
-                src="https://www.freeiconspng.com/uploads/github-logo-icon-22.png" 
-                alt="stackoverflow icon">
+                src="https://cdn3.iconfinder.com/data/icons/social-rounded-2/72/GitHub-256.png" 
+                alt="github icon">
             </a>
           </li>
           <li>
             <a href="https://stackoverflow.com/users/19290081/jamiu-shaibu" target="_blank">
               <img class="link-image" 
-                src="https://img.uxwing.com/wp-content/themes/uxwing/download/brands-social-media/stackoverflow-color-icon.svg" 
+                src="https://cdn0.iconfinder.com/data/icons/social-rounded/72/stackoverflow-256.png" 
                 alt="stackoverflow icon">
             </a>
           </li>
@@ -155,7 +155,7 @@ def about_app_html() -> None:
           <li>
             <a href="https://twitter.com/Prince__jam" target="_blank">
               <img class="link-image" 
-                src="https://pngimg.com/uploads/twitter/twitter_PNG22.png" 
+                src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_6-twitter-256.png" 
                 alt="twitter icon">
             </a>
           </li>
